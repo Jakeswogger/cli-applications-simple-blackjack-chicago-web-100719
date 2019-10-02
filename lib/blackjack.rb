@@ -64,7 +64,7 @@ def runner
   if user_input == "h"
     user_cards += deal_card
   end
-  p user_cards
+  p "Your cards add up to #{user_cards}"
 end
 end
     
