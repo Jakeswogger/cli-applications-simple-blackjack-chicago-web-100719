@@ -57,10 +57,11 @@ def runner
   user_cards = initial_round
   prompt_user
   until user_cards > 21
-  if get_user_input == "s"
+  user_input = get_user_input
+  if user_input == "s"
     prompt_user
   end
-  if get_user_input == "h"
+  if user_input == "h"
     user_cards += deal_card
   end
   p user_cards
